@@ -1,0 +1,90 @@
+.company-logo{
+    background-color: black;
+color: aliceblue;
+    width: 11rem;
+    height: 10rem;
+    margin: 1rem;
+    border-color: black;
+    border: 3px solid gray;
+    margin-right: 2rem;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: large;
+    padding: 1rem;
+    padding-top: 3rem;
+}
+/* .company-logo::after{
+    display: none;
+   
+} */
+/* #company-txt::after{
+    content: 'MADPIZZA';
+    color: aliceblue;
+    /* background-color: aqua; */
+/* }
+
+#company-txt:hover::before{
+    color: aliceblue;
+    content: 'www.sdf.com';
+margin-right:1rem ; */
+/* }
+#company-txt:hover:before::after{
+
+
+    } */
+
+ 
+.company-logo:hover::before{
+    transition: all .5s ease;
+    color: aliceblue;
+    content: 'www.SuperProfile.com';
+    display:block;
+    font-size:x-small;
+    /* margin-right: 1rem ; */
+/* padding-right: 1rem; */
+
+    /* background-color: aliceblue; */
+ 
+    /* transform: translateX(-50%); */
+}
+
+
+.company-display{
+    display: flex;
+    padding: 1rem;
+}
+.Our-client{
+    display: flex;
+    padding: 20rem;
+    margin-top: 20rem;  
+    justify-content: center;
+    background: #1d1d1d;
+    color: aliceblue;
+    margin-bottom: 30rem;
+}
+.client{
+    font-size: large;
+    margin-right: 12rem;
+    padding-right: 8rem;
+}
+.Our-client .client h3{
+    margin: 3rem;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.Our-client .client h1{
+    margin: 2.5rem;
+/* color: rgb(123,345,567);  */
+background: #1986CF;
+background: linear-gradient(to right, #1986CF 0%, #CF40A4 86%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+font-weight: 700;
+font-style: oblique;
+   
+}
+.Our-client .client p{
+    margin-top: 5rem  
+}

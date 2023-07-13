@@ -1,0 +1,252 @@
+
+.card-heading{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 1rem;
+    margin-top: 10rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    background: #1d1d1d;
+color: aliceblue;
+padding: 5rem;
+  }
+
+
+  .card-heading2{
+    margin-top: 4rem;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1rem;
+    /* margin: 1rem; */
+    /* margin-top: 2rem; */
+    font-size: 3rem;
+    font-weight: bolder;
+    background: #1d1d1d;
+color: aliceblue;
+padding: 5rem;
+  }
+
+
+
+
+@import 'https://fonts.googleapis.com/css?family=Do+Hyeon';
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clear-fix:after {
+  display: block;
+  clear: both;
+  content: "";
+
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+
+}
+.card-layout{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+
+}
+
+.card__collection {
+  position: relative;
+  /* display: flex; */
+  background: #1d1d1d;
+  padding: 12rem;
+  font-family: "Do Hyeon", sans-serif;
+  overflow: hidden;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.card__collection .cards {
+  
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 300px;
+  height: 400px;
+  /* display: block; */
+  background-size: cover;
+  float: left;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  margin: 10px;
+
+}
+/* 
+.icon{
+  /* background-color: #57ccfd; */
+  /* justify-content:baseline; */
+  /* z-index: 8; */
+  /* width: 100%; */
+  /* height: 100%; */
+
+/* } */ 
+.card__collection .cards--one:before {
+  content: "";
+  /* display: block; */
+  position: absolute;
+  height: 80px;
+  transform: rotate(-3deg);
+  bottom: -90px;
+  left: 0;
+  background: #fff;
+  right: -10px;
+  z-index: 1;
+  transition: all 0.2s ease-in;
+  transition-delay: 0.1s;
+  /* justify-content: center; */
+  /* align-items: center; */
+
+}
+.card__collection .cards--one__rect {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  /* background: #0f9bc0; */
+  width: 126px;
+  height: 55px;
+  transform: skewY(5deg);
+  position: absolute;
+  /* display: block; */
+  top: 60%;
+  left: -45%;
+  z-index: 1;
+  line-height: 3.3rem;
+  text-align: center;
+  transition: all 0.2s ease-in;
+  /* justify-content: center; */
+  /* align-items: center; */
+
+}
+.card__collection .cards--one__rect--back {
+  /* display: block; */
+  /* background: rgba(34, 65, 154, 0.8); */
+  width: 126px;
+  height: 55px;
+  transform: skewY(7deg);
+  position: absolute;
+  top: 65%;
+  left: -50%;
+  transition: all 0.2s ease-in;
+  transition-delay: 0.3s;
+  /* justify-content: center; */
+  /* align-items: center; */
+
+}
+.card__collection .cards--one__rect p {
+  transform: skewY(-7deg);
+  position: relative;
+
+}
+.card__collection .cards--two {
+  position: relative;
+  backface-visibility: hidden;
+
+}
+.card__collection .cards--two p {
+  position: absolute;
+  top: 83%;
+  left: -100%;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 20px;
+  z-index: 8;
+  transition: all 0.6s ease;
+}
+
+.card__collection .cards--two:hover p {
+  left: 8%;
+}
+.card__collection .cards--two:hover img {
+  transform: translateY(-15px);
+}
+.card__collection .cards--two:hover .cards--two__rect {
+  top: 75%;
+}
+.card__collection .cards--two:hover .cards--two__rect:before {
+  transform: translateY(15px);
+}
+.card__collection .cards--two:hover li {
+  transform: translateY(0);
+}
+.card__collection .cards--two:hover .cards--two__tri {
+  right: -40%;
+}
+.card__collection .cards--two:hover .cards--two__tri:before {
+  right: -312px;
+}
+.card__collection .cards--two img {
+  transition: all 0.2s ease;
+}
+.card__collection .cards--two__tri {
+  border-top: 220px solid transparent;
+  border-bottom: 190px solid transparent;
+  border-right: 288px solid #fff;
+  opacity: 0.9;
+  position: absolute;
+  /* display: block; */
+  top: 0;
+  right: -100%;
+  transition: all 0.3s ease-in-out;
+
+  
+}
+.card__collection .cards--two__tri:before {
+  border-top: 220px solid transparent;
+  border-bottom: 190px solid transparent;
+  border-right: 288px solid #57ccfd;
+  position: absolute;
+  content: "";
+  /* display: block; */
+  top: -220px;
+  right: -612px;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.2s;
+
+}
+.card__collection .cards--two__rect {
+  width: 750px;
+  height: 200px;
+  background: #fff;
+  /* display: block; */
+  position: absolute;
+  top: 175%;
+  left: -78%;
+  transform: rotate(30deg);
+  z-index: 1;
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out;
+
+}
+.card__collection .cards--two__rect:before {
+  content: "";
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background: #f07306;
+  transform: translateY(200px);
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.1s;
+
+}
